@@ -1,0 +1,214 @@
+section {
+    width: 100%;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*---SECTION TITLES---*/
+
+.bg-line-left {
+    background-image: url('../img/line-left.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+}
+
+.bg-line-right {
+    background-image: url('../img/line-right.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 250px;
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.title-mob {
+    position: relative;
+    width: 100%;
+}
+
+.title-mob h2 {
+    position: absolute;
+    color: white;
+    text-align: center;
+    top: 40px;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .title {
+        text-align: center;
+    }
+
+    .title-bg-mob {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        background: linear-gradient(
+            rgb(220, 220, 220) 0%,
+            rgb(230, 230, 230) 7%,
+            rgb(240, 240, 240) 15%,
+            rgb(250, 250, 250)
+        );
+
+        padding: 20px 0;
+    }
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.6rem;
+    color: white;
+}
+h3 {
+    font-size: 1.4rem;
+}
+
+/*---SECTION TEXT---*/
+
+section ul {
+    padding-left: 20px;
+    font-size: 1.35rem;
+    line-height: 2;
+    text-align: justify;
+}
+section div p {
+    font-size: 1.35rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+.text-left {
+    margin-left: 15%;
+    margin-right: 38vw;
+    width: auto;
+}
+
+.text-right {
+    margin-left: 38vw;
+    margin-right: 15%;
+    width: auto;
+}
+
+section ul {
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .text-left, .text-right {    
+        width: 80%;    
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/*---SECTION IMG---*/
+
+.img-mob {
+    width: 100%;
+}
+.img-desk {
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 35vw;
+}
+.img-right {
+    right: 0;
+}
+.img-left {
+    left: 0;
+}
+.img-hand {
+    top: 50%;
+    width: 25vw;
+}
+
+/*---BTNS---*/
+
+.btn-main {
+    max-width: 450px;
+    width: 60%;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #2a797d;
+    padding: 20px 40px; 
+    margin: 20px 0 20px 0;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .btn-main {
+        max-width: 80%;
+        width: 80%;
+        display: block;
+        margin: 30px auto 0px auto;
+    }
+}
+
+
+/*** DLACZEGO MY ***/
+
+.mg-center {
+    
+}
+
+.bg-line-dlaczego-my {
+    background-image: url('../img/line-left.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+    margin-top: 150px;
+}
+
+.bg-line-dlaczego-my img {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    z-index: 1;
+    background: transparent;
+    top: -110px;
+}
+
+@media (max-width: 768px) {
+    .bg-line-dlaczego-my {
+        background-image: url('../img/line-left.png');
+        background-size: 100% 100%;
+        height: 150px;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+        margin-top: 250px;
+    }
+
+    .bg-line-dlaczego-my img {
+        z-index: -1;
+        right: auto;
+        top: -200px;
+        width: 300px;
+    }
+
+
+}

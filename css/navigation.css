@@ -1,0 +1,144 @@
+/**************/
+/*---HEADER---*/
+/**************/
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.home-icon img {
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+.separator {
+    display: inline-block;
+    width: 2px; 
+    height: 20px;
+    background-color: #52ddf0;    
+    margin: 0 10px;
+}
+
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-links a, .lang-btn {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: #50e2f9;
+    font-size: 1rem;
+}
+
+
+.contact-icon {
+    margin-right: 10px;
+    width: 40px;  /* Adjust size as needed */
+    height: 40px;  /* Adjust size as needed */
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+}
+
+.mobile-nav-links {
+    display: none;
+    flex-direction: column;
+    padding: 10px 25px 10px 10px;
+    text-align: right;
+}
+
+.mobile-nav-links a {
+    margin: 10px 0;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 5px;
+    color: white;
+    box-shadow: 4px 0px 2px -2px #50e2f9;
+}
+
+.nav-links a:hover {
+    color: #52ddf0;
+}
+.contact-links a:hover {
+    color: #52ddf0;
+}
+.mobile-nav-links a:hover {
+    color: #52ddf0;
+}
+
+
+
+@media (max-width: 1420px) {
+    .text-hiding {
+        display: none;
+    }
+    .contact-links {
+        gap: 0px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+    .text-hiding {
+        display: inline;
+    }
+
+    .contact-links {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: inline-block;
+    }
+
+    .mobile-nav-links {
+        display: none;
+    }
+
+    .mobile-nav-links.active {
+        display: flex;
+    }
+
+}

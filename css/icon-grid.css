@@ -1,0 +1,66 @@
+/*---ICON GRID---*/
+
+.icon-grid-outer {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-left: 50px;
+    margin-right: 25px;
+}
+.icon-grid-inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.icon-item img {
+    width: auto;
+    height: 180px;
+}
+.icon-item p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+    .icon-grid-inner {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .icon-item img {
+        width: auto;
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .icon-grid-inner {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .icon-item {
+        padding: 15px;
+    }
+
+    .icon-item img {
+        width: auto;
+        height: 110px;
+    }
+
+    .icon-item p {
+        font-size: 0.8rem;
+    }
+
+}
