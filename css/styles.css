@@ -1,7 +1,17 @@
+html {
+    font-size: 100%;
+}
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-size: calc(1rem + 0.5vw);
+}
+
+@media (min-width: 1980px) {
+    body {
+        font-size: calc(1.5rem + 1vw);
+    }
 }
 
 main {
