@@ -28,11 +28,29 @@
     height: 180px;
 }
 .icon-item p {
-    font-size: 1rem;
     margin: 0;
     text-align: center;
-    line-height: 1.5;
 }
+
+@media (min-width: 1921px) {
+    .icon-grid-inner {
+        max-width: 1500px;
+    }
+    .icon-item img {
+        height: 250px;
+    }
+}
+
+@media (min-width: 2561px) {
+    .icon-grid-inner {
+        max-width: 60vw;
+        gap: 50px;
+    }
+    .icon-item img {
+        height: calc(250px + 3vw);
+    }
+}
+
 
 @media (max-width: 1200px) {
     .icon-grid-inner {
@@ -57,10 +75,6 @@
     .icon-item img {
         width: auto;
         height: 110px;
-    }
-
-    .icon-item p {
-        font-size: 0.8rem;
     }
 
 }

@@ -17,6 +17,12 @@
     padding: 10px 20px;
 }
 
+@media (min-width: 2560px) { 
+    .nav-menu {
+        padding: 20px 40px;
+    }
+}
+
 .nav-links {
     display: flex;
     align-items: center;
@@ -34,15 +40,6 @@
     margin-right: 20px;
     margin-left: 30px;
 }
-
-.separator {
-    display: inline-block;
-    width: 2px; 
-    height: 20px;
-    background-color: #52ddf0;    
-    margin: 0 10px;
-}
-
 
 .contact-links {
     display: flex;
@@ -63,7 +60,6 @@
     background: none;
     border: none;
     color: #50e2f9;
-    font-size: 1rem;
 }
 
 

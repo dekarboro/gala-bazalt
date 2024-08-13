@@ -1,17 +1,11 @@
-html {
-    font-size: 100%;
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: calc(1rem + 0.5vw);
-}
-
-@media (min-width: 1980px) {
-    body {
-        font-size: calc(1.5rem + 1vw);
-    }
 }
 
 main {
@@ -35,7 +29,7 @@ button {
 }
 
 .mg-right {
-    margin-left: 38vw !important;
+    margin-left: 40% !important;
 }
 
 .mg-top {
@@ -84,5 +78,28 @@ button {
     }
     .show-mob {
         display: none !important;
+    }
+}
+
+
+
+.separator {
+    display: inline-block;
+    width: 2px; 
+    height: 20px;
+    background-color: #52ddf0;    
+    margin: 0 10px;
+}
+
+@media (min-width: 1980px) {
+    .separator {
+        height: 25px;
+    }
+}
+
+@media (min-width: 2560px) { 
+    .separator {
+        height: 30px;
+        margin: 0 20px;
     }
 }
