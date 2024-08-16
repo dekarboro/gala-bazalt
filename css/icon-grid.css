@@ -2,39 +2,78 @@
 
 .icon-grid-outer {
     margin-top: 50px;
+    margin-bottom: 50px;
+    width: 90%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    margin-left: 50px;
-    margin-right: 25px;
 }
 .icon-grid-inner {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1200px;
+    grid-template-columns: repeat(2, 1fr);
     width: 100%;
 }
 .icon-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 .icon-item img {
     width: auto;
-    height: 180px;
+    height: 100px;
 }
+
 .icon-item p {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    display: inline;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;    
 }
+
+
+@media (min-width: 768px) {
+    .icon-grid-outer {
+        margin-left: 50px;
+        margin-right: 25px;
+    }
+    .icon-grid-inner {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .icon-item {
+    }
+    .icon-item img {
+        height: 140px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 1366px) {
+    .icon-grid-outer {
+        width: 85%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .icon-grid-inner {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+    .icon-item img {
+        height: 140px;
+    }
+}
+
 
 @media (min-width: 1921px) {
     .icon-grid-inner {
-        max-width: 1500px;
+       
     }
     .icon-item img {
         height: 250px;
@@ -43,38 +82,13 @@
 
 @media (min-width: 2561px) {
     .icon-grid-inner {
-        max-width: 60vw;
-        gap: 50px;
+        gap: 100px;
+    }
+    .icon-grid-outer {
+        width: 80%;
     }
     .icon-item img {
         height: calc(250px + 3vw);
     }
 }
 
-
-@media (max-width: 1200px) {
-    .icon-grid-inner {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .icon-item img {
-        width: auto;
-        height: 140px;
-    }
-}
-
-@media (max-width: 768px) {
-    .icon-grid-inner {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
-    }
-
-    .icon-item {
-        padding: 15px;
-    }
-
-    .icon-item img {
-        width: auto;
-        height: 110px;
-    }
-
-}

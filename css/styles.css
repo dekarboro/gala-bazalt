@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     box-sizing: border-box;
     margin: 0;
@@ -21,55 +25,71 @@ button {
     cursor: pointer;
 }
 
-
-/*---TOOLS---*/
-
-.mg-left {
-    margin-left: 15% !important;
+section {
+    margin-bottom: 50px;
 }
 
-.mg-right {
-    margin-left: 40% !important;
+@media (min-width: 1920px) {
+    section {
+        margin-bottom: 100px;
+    }    
 }
 
-.mg-top {
-    margin-top: 75px !important;
-}
-
-.mg-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-@media (max-width: 768px) {
-    .mg-left {
-        margin-left: auto !important;
-    }
-    .mg-right {
-        margin-left: auto !important;
-    }
-
-    .mg-top {
-        margin-top: auto;
-    }
-    .mg-top-mob {
-        margin-top: 75px !important
-    }
+@media (min-width: 2560px) { 
+    section {
+        margin-bottom: 150px;
+    } 
 }
 
 
-@media (max-width: 768px) {
-    .show-desk, .show-flex {
-        display: none !important;
-    }
-    .show-mob {
-        display: block !important;
+
+ol {
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 15px;
+    text-indent: 10px;
+}
+
+ol li::marker {
+    font-weight: 700 !important;
+}
+
+@media (min-width: 1920px) {
+    ol li {
+        margin-bottom: 25px;
+        text-indent: 20px;
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 2560px) {
+    ol li {
+        margin-bottom: 30px;
+        text-indent: 30px;
+    }
+}
+
+
+
+
+/*---TOOLS---
+*/
+
+
+.show-desk, .show-flex {
+    display: none !important;
+}
+.show-mob {
+    display: block !important;
+}
+
+
+@media (min-width: 1024px) {
     .show-desk {
         display: block !important;
     }

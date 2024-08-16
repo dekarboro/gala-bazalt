@@ -1,0 +1,32 @@
+.ul-arrow {
+    list-style-type: none; /* Remove the default bullet */
+    margin: 0;
+    padding: 0;
+}
+
+.arrow {
+    margin-right: 15px;
+}
+
+ul {
+    text-align: justify;
+    padding-left: 20px;
+}
+
+@media (min-width: 1920px) {
+    .arrow {
+        margin-right: 20px;
+    }
+}
+
+
+@media (min-width: 2560px) {
+    .arrow {
+        margin-right: 30px;
+    }    
+}
+
+ul li {
+    text-indent: 0;
+    margin-bottom: 0;
+}

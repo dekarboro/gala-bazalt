@@ -2,7 +2,7 @@ html {
     font-size: 100%;
 }
 
-body {
+body, ol li::marker {
     font-family: 'MontserratFont', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: calc(0.8rem + 0.5vw);
@@ -19,7 +19,7 @@ h3 {
 }
 
 @media (min-width: 1981px) {
-    body {
+    body, ol li::marker {
         font-size: calc(1rem + 0.6vw);
     }
     h1 {
@@ -34,7 +34,7 @@ h3 {
 }
 
 @media (min-width: 2561px) {
-    body {
+    body, ol li::marker {
         font-size: calc(1.2rem + 0.7vw);
     }
     h1 {
@@ -55,7 +55,8 @@ section ul, section div p {
 }
 
 .btn-main {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .icon-item p {
@@ -95,14 +96,25 @@ section ul, section div p {
 /*---NAVIGAITON---*/
 
 .nav-menu {
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 footer {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
-@media (min-width: 1921px) {
+
+@media (min-width: 1366px) {
+    .nav-menu {
+        font-size: 1rem;
+    }
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (min-width: 1920px) {
     .nav-menu {
         font-size: 1.2rem;
     }

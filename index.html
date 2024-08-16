@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,84 +19,97 @@
     <header class="header">
         <nav class="nav-menu">
             <div class="nav-links">
-                <a href="#" class="home-icon"><img src="./img/icons/icon-home.png" alt="Home"></a>
-                <a href="./material-pszyszlosci.html">MATERIAŁ PRZYSZŁOŚCI</a>
+                <a href="#home" class="home-icon"><img src="./img/icons/icon-home.png" alt="Home"></a>
+                <a href="#material-przyszlosci">MATERIAŁ PRZYSZŁOŚCI</a>
                 <span class="separator"></span>
-                <a href="./cel-produktu.html">CEL PRODUKTU</a>
+                <a href="#cel-projektu">CEL PROJEKTU</a>
                 <span class="separator"></span>
-                <a href="./dlaczego-my.html">DLACZEGO MY</a>
+                <a href="#dlaczego-my">DLACZEGO MY</a>
                 <span class="separator"></span>
-                <a href="./konkurs.html">KONKURS INWESTYCYJNY</a>
+                <a href="#konkurs">KONKURS INWESTYCYJNY</a>
             </div>
             <div class="contact-links">
-                <a href="mailto:contact@example.com">
-                    <img class="contact-icon" src="./img/icons/icon-email.png" alt="">
-                    <span class="text-hiding">
-                        example@galabazalt.com   
-                    </span>
-                </a>
-                <a href="#">
-                    <img class="contact-icon" src="./img/icons/icon-tel.png" alt="">
-                    <span class="text-hiding">
-                        +48 111 222 333   
-                    </span>                    
-                </a>
+                <div class="contact-links-info">
+                    <a href="mailto:contact@example.com">
+                        <img class="contact-icon" src="./img/icons/icon-email.png" alt="">
+                        <span class="text-hiding">
+                            example@galabazalt.com   
+                        </span>
+                    </a>
+                    <a href="#">
+                        <img class="contact-icon" src="./img/icons/icon-tel.png" alt="">
+                        <span class="text-hiding">
+                            +48 111 222 333   
+                        </span>                    
+                    </a>
+                </div>                
                 <!--<button class="lang-btn">PL</button>  make dropdown for EN -->
                 <button class="menu-toggle"><img src="./img/icons/icon-menu-button.png" alt="Menu"></button>
             </div>
         </nav>
         <div class="mobile-nav-links">
-            <a href="./material-pszyszlosci.html">MATERIAŁ PRZYSZŁOŚCI</a>
-            <a href="./cel-produktu.html">CEL PRODUKTU</a>
-            <a href="./dlaczego-my.html">DLACZEGO MY</a>
-            <a href="./konkurs.html">KONKURS INWESTYCYJNY</a>
+            <a href="#material-przyszlosci">MATERIAŁ PRZYSZŁOŚCI</a>
+            <a href="#cel-projektu">CEL PRODUKTU</a>
+            <a href="#dlaczego-my">DLACZEGO MY</a>
+            <a href="#konkurs">KONKURS INWESTYCYJNY</a>
         </div>
     </header>
-    <div class="header-logo"></div>
+    <div id="home" class="header-img">
+        <img class="show-desk" src="./img/home-page/desk/logo-header-background.jpg" alt="">
+        <img class="show-mob" src="./img/home-page/mob/logo-header-background-mobile.jpg" alt="">
+    </div>
+
+
+    <!--<div class="header-logo"></div>-->
 
     <main>
         <!--FUTURE-->
-        <section>
-
-            <h1 class="title text-left mg-top">PSZYSZLOŚĆ JUŻ DZIŚ</h1>
+        <section id="material-przyszlosci">
+            <div class="title-bg-mob">
+                <h1 class="text-left">PSZYSZLOŚĆ JUŻ DZIŚ</h1>
+            </div>            
             
             <!-- imgs -->
             <img class="img-desk img-right show-desk" src="./img/home-page/desk/img-future.png" alt="">
             <!--<img class="img-desk img-right show-desk img-hand" src="./img/home-page/desk/img-future-hand.jpg" alt="">-->
             
             <div class="title-mob show-mob">
-                <h2>GLOBALNY PRZEŁOM - ZOSTAŃ WSPÓŁTWÓRCĄ NOWEJ ERY TECHNOLOGICZNEJ!</h2>
+                <h2>ZOSTAŃ WSPÓŁTWÓRCĄ NOWEJ ERY TECHNOLOGICZNEJ!</h2>
                 <img class="img-mob" src="./img/home-page/mob/img-future-mobile.jpg" alt="">            
             </div>        
     
             <div class="bg-line-left show-flex">
-                <h2 class="title text-left">GLOBALNY PRZEŁOM - ZOSTAŃ WSPÓŁTWÓRCĄ NOWEJ ERY TECHNOLOGICZNEJ!</h2>
+                <h2 class="text-left">ZOSTAŃ WSPÓŁTWÓRCĄ NOWEJ ERY TECHNOLOGICZNEJ!</h2>
             </div>      
             <!-- --- -->
     
-            <h3 class="title text-left">TANIA I EKOLOGICZNA ZAMIANA METALI I TWORZYW SZTUCZNYCH</h3>
-            <ul class="text-left">
-                <li><strong>wyższa wytrzymałość mechaniczna od stali</strong> (granicza wytrzymałości na rozciąganie do 4800 MPa (dla porównania stal C55 - max. 900 MPa));</li>
-                <li><strong>niska waga</strong> (3 razy lżejsza od stali);</li>
-                <li><strong>odporność na niskie i wysokie temperatury</strong> (temperatura pracy od -260°C do +750°C);</li>
-                <li><strong>nie ulega rozszerzaniu i kurczeniu</strong> pod wpływem zmian temperatury;</li>
-                <li><strong>odporność na korozję</strong> (nieograniczony okres przechowywania i użytkowania bez zmiany parametrów fizyko-mechanicznych);</li>
-                <li><strong>odporność na środowiska kwaśne i zasadowe;</strong></li>
-                <li><strong>odporność na światło ultrafioletowe i zmienne warunki atmosferyczne;</strong></li>
-                <li><strong>niepalność</strong> (nie topi się i nie plastifikuje pod wpływem wysokiej temperatury do 1500°C);</li>
-                <li><strong>izolacja elektryczna, nie ma przewodności elektrycznej;</strong></li>
-                <li><strong>izolacja cieplna;</strong></li>
-                <li><strong>nie wymaga spawania.</strong></li>
-            </ul>     
-            <button class="btn-main mg-left">
-                <a href="./material-pszyszlosci.html">ZALETY MATERIAŁU</a>
+            <div class="text-left">
+                <h3 class="">TANIA I EKOLOGICZNA ZAMIANA METALI I TWORZYW SZTUCZNYCH</h3>
+                <ul class="">
+                    <li><strong>wyższa wytrzymałość mechaniczna od stali</strong> (granicza wytrzymałości na rozciąganie do 4800 MPa (dla porównania stal C55 - max. 900 MPa));</li>
+                    <li><strong>niska waga</strong> (3 razy lżejsza od stali);</li>
+                    <li><strong>odporność na niskie i wysokie temperatury</strong> (temperatura pracy od -260°C do +750°C);</li>
+                    <li><strong>nie ulega rozszerzaniu i kurczeniu</strong> pod wpływem zmian temperatury;</li>
+                    <li><strong>odporność na korozję</strong> (nieograniczony okres przechowywania i użytkowania bez zmiany parametrów fizyko-mechanicznych);</li>
+                    <li><strong>odporność na środowiska kwaśne i zasadowe;</strong></li>
+                    <li><strong>odporność na światło ultrafioletowe i zmienne warunki atmosferyczne;</strong></li>
+                    <li><strong>niepalność</strong> (nie topi się i nie plastifikuje pod wpływem wysokiej temperatury do 1500°C);</li>
+                    <li><strong>izolacja elektryczna, nie ma przewodności elektrycznej;</strong></li>
+                    <li><strong>izolacja cieplna;</strong></li>
+                    <li><strong>nie wymaga spawania.</strong></li>
+                </ul>     
+            <button class="btn-main">
+                <a href="./zalety.html">ZALETY MATERIAŁU</a>
             </button>
+
+            </div>
+            
     
         </section>
 
         <!--BAZALT-->
         <section>
-            <div class="title-bg-mob mg-top mg-top-mob">
+            <div class="title-bg-mob">
                 <h1 class="text-right">CZYM JEST ROVING BAZALTOWY</h1>
             </div>            
             <!-- imgs -->
@@ -108,7 +121,7 @@
             </div>       
     
             <div class="bg-line-right show-flex">
-                <h2 class="title text-right">EKOLOGICZNY MATERIAL PRZYSZŁOŚCI</h2>
+                <h2 class="text-right">EKOLOGICZNY MATERIAL PRZYSZŁOŚCI</h2>
             </div>
             <!-- --- -->
 
@@ -135,29 +148,30 @@
                     Nasza oferta to produkcja najbardziej zaawansowanego technologicznie,
                     ekonomicznie i ekologicznie materiału o szerokim spektrum
                     zastosowań i możliwości tworzenia nowych, nowoczesnych produktów.
-                </strong></p>                
+                </strong></p>   
+                <button class="btn-main">
+                    <a href="./zastosowanie.html">ZASTOSOWANIE MATERIAŁU</a>
+                </button>             
             </div>
-            <button class="btn-main mg-right">
-                <a href="./material-pszyszlosci.html">ZALETY MATERIAŁU</a>
-            </button>
+            
         </section>
 
         <!--CEL PROJEKTU-->
-        <section>
-            <div class="title-bg-mob mg-top mg-top-mob">
-                <h1 class="title text-left">CEL PROJEKTU</h1>
+        <section id="cel-projektu">
+            <div class="title-bg-mob">
+                <h1 class="text-left">CEL PROJEKTU</h1>
             </div>
 
             <!-- imgs -->
             <img class="img-desk img-right show-desk" src="./img/home-page/desk/img-eco.png" alt="">
 
             <div class="title-mob show-mob">
-                <h2>CZYSTY PREZENT OD NASZEJ PLANETY dla inteligentnej i zielonej gospodarki</h2>
+                <h2>CZYSTY PREZENT OD NASZEJ PLANETY</h2>
                 <img class="img-mob" src="./img/home-page/mob/img-eco-mobile.jpg" alt="">
             </div>
 
             <div class="bg-line-left show-flex">
-                <h2 class="title text-left">CZYSTY PREZENT OD NASZEJ PLANETY dla inteligentnej i zielonej gospodarki</h2>
+                <h2 class="text-left">CZYSTY PREZENT OD NASZEJ PLANETY</h2>
             </div>
             <!-- --- -->
 
@@ -178,20 +192,21 @@
                     dla środowiska produkcji materiału przyszłości - niedoprzędu bazaltowego i wyrobów
                     kompozytowych bazaltowych, z naukową i techniczną perspektywą ciągłego rozwoju.
                 </p>
+                <button class="btn-main">
+                    <a href="./cel-projektu.html">
+                        DOWIEDŹ SIĘ WIĘCEJ
+                    </a>
+                </button>
             </div>
-            <button class="btn-main mg-left">
-                <a href="./cel-produktu.html">
-                    DOWIEDŹ SIĘ WIĘCEJ
-                </a>
-            </button>
+            
         </section>
 
         <!--DLACZEGO MY-->
-        <section>
+        <section id="dlaczego-my">
 
             <div class="bg-line-dlaczego-my">
-                <h2 class="title text-left">DLACZEGO MY</h2>
-                <img src="./img/home-page/mob/img-why-us-mobile.jpg" alt="">
+                <h2 class="text-left">DLACZEGO MY</h2>
+                <img src="./img/home-page/mob/img-why-us-mobile.png" alt="">
             </div>
 
             <div class="icon-grid-outer">
@@ -250,9 +265,9 @@
         </section>
 
         <!-- KONKURS -->
-        <section>
-            <div class="title-bg-mob mg-top mg-top-mob">
-                <h1 class="title text-right">KONKURS INWESTYCYJNY</h1>
+        <section id="konkurs">
+            <div class="title-bg-mob">
+                <h1 class="text-right">KONKURS INWESTYCYJNY</h1>
             </div>
 
             <img class="img-desk img-left show-desk" src="./img/home-page/desk/img-konkurs.png" alt="">
@@ -263,7 +278,7 @@
             </div>
 
             <div class="bg-line-right show-flex">
-                <h2 class="title text-right">ODPOWIEDZIALNI ZA PRZYSZŁOŚĆ</h2>
+                <h2 class="text-right">ODPOWIEDZIALNI ZA PRZYSZŁOŚĆ</h2>
             </div>
 
             <div class="text-right">
@@ -280,11 +295,12 @@
                     Perspektywy tego projektu są bardzo obiecujące dzięki
                     <strong>udziałowi w Spółce jako współwłaściciel.</strong>
                 </p>
+                <button class="btn-main">
+                    <a href="./konkurs.html">ZOSTAŃ PARTNEREM</a>
+               </button>
             </div>
 
-           <button class="btn-main mg-right">
-                <a href="./konkurs.html">INWESTUJ MĄRDZE</a>
-           </button>
+           
         </section>
 
     </main>
@@ -292,14 +308,14 @@
     <footer>
         <div class="nav-footer-wrapper">
             <div class="nav-footer">
-                <a href="#" class="home-icon-footer"><img src="./img/icons/icon-home.png" alt="Home"></a>
-                <a href="./material-pszyszlosci.html">MATERIAŁ PRZYSZŁOŚCI</a>
+                <a href="#home" class="home-icon-footer"><img src="./img/icons/icon-home.png" alt="Home"></a>
+                <a href="#material-przyszlosci">MATERIAŁ PRZYSZŁOŚCI</a>
                 <span class="separator-footer"></span>
-                <a href="./cel-produktu.html">CEL PRODUKTU</a>
+                <a href="#cel-projektu">CEL PROJEKTU</a>
                 <span class="separator-footer"></span>
-                <a href="./dlaczego-my.html">DLACZEGO MY</a>
+                <a href="#dlaczego-my">DLACZEGO MY</a>
                 <span class="separator-footer"></span>
-                <a href="./konkurs.html">KONKURS INWESTYCYJNY</a>
+                <a href="#konkurs">KONKURS INWESTYCYJNY</a>
             </div>
             <div class="contact-btns-footer">
                 <a href="mailto:contact@example.com">
