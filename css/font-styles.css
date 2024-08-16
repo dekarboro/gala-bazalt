@@ -64,12 +64,18 @@ section ul, section div p {
     line-height: 1.5;
 }
 
+@media (min-width: 1024px) {
+    .btn-main {
+        font-size: 1.1rem;
+    }
+}
+
 @media (min-width: 1921px) {
     section ul, section div p {
         line-height: 2.2;
     }
     .btn-main {
-        font-size: calc(1.5rem + 0.5vw);
+        font-size: calc(1.1rem + 0.5vw);
     }
 }
 
