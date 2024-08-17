@@ -3,7 +3,7 @@
 .icon-grid-outer {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 90%;
+    width: 100%;
 
     display: flex;
     justify-content: center;
@@ -13,6 +13,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
+    gap: 10px;
 }
 .icon-item {
     display: flex;
@@ -27,11 +28,9 @@
 .icon-item p {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
     display: inline;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;    
 }
 
 

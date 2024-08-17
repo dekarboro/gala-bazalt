@@ -147,7 +147,7 @@ section ul {
     position: absolute;
     z-index: 1;
     top: 0;
-    width: 35%;
+    width: 30%;
 }
 .img-right {
     right: 0;
@@ -158,12 +158,6 @@ section ul {
 .img-hand {
     top: 50%;
     width: 25%;
-}
-
-@media (min-width: 2560px) {
-    .img-desk {
-        width: 30%;
-    }
 }
 
 /*---BTNS---*/
@@ -180,6 +174,12 @@ section ul {
 
 .btn-main:hover {
     background: linear-gradient(to right, #00B2C7, #0084AB);
+}
+
+@media (min-width: 1024px) {
+    .btn-main {
+        width: 70%;
+    }
 }
 
 @media (min-width: 1921px) {

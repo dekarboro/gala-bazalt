@@ -1,0 +1,137 @@
+
+ol {
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 15px;
+    text-indent: 10px;
+}
+
+ol li::marker {
+    font-weight: 700 !important;
+}
+
+@media (min-width: 1920px) {
+    ol li {
+        margin-bottom: 25px;
+        text-indent: 20px;
+    }
+}
+
+@media (min-width: 2560px) {
+    ol li {
+        margin-bottom: calc(35px + 0.3vw);
+        text-indent: 30px;
+    }
+}
+
+
+
+.bullshit {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.key-container {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.key-container > img {
+    width: 100%;
+}
+
+
+
+.contact-container {
+    margin-top: 100px;
+}
+
+.contact-card {
+    padding: 15px 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-card:hover {
+    color: #52ddf0;
+}
+
+.contact-card img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+.plane-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.plane-container img {
+    width: 70%;
+}
+
+.position-plane-header {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 7%;
+}
+
+.plane-container h1 {
+    font-size: 2rem;
+}
+
+@media (min-width: 1024px) {
+    .bullshit {
+        grid-template-columns: 1fr 1fr;
+        gap: 2%;
+        margin-bottom: 0;
+    }
+    .key-container {
+        margin-left: 20%;
+        margin-bottom: 100px;
+    }
+
+    .contact-card {
+        font-size: calc(1.2rem + 1vw);
+        padding: calc(15px + 0.2vw) 0 calc(15px + 0.2vw) calc(20px + 2vw);
+    }
+    .contact-card img {
+        width: calc(60px + 2vw);
+    }
+    .plane-container h1 {
+        font-size: calc(1.8rem + 1vw);
+    }
+}
+
+@media (min-width: 1024px) {
+    .key-container {
+        margin-bottom: calc(100px + 2vw);
+    }
+    .plane-container h1 {
+        font-size: calc(2rem + 1.4vw);
+    }
+
+}
+
+footer {
+    margin-top: 0;
+}

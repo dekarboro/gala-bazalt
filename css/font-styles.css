@@ -5,53 +5,17 @@ html {
 body, ol li::marker {
     font-family: 'MontserratFont', Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: calc(0.8rem + 0.5vw);
+    font-size: 0.9rem;
 }
 
 h1 {
-    font-size: calc(1.2rem + 0.5vw);
+    font-size: 1.8rem;
 }
 h2 {
-    font-size: calc(1.05rem + 0.5vw);
+    font-size: 1.4rem;
 }
-h3 {
-    font-size: calc(0.9rem + 0.5vw);
-}
-
-@media (min-width: 1981px) {
-    body, ol li::marker {
-        font-size: calc(1rem + 0.6vw);
-    }
-    h1 {
-        font-size: calc(1.6rem + 0.6vw);
-    }
-    h2 {
-        font-size: calc(1.4rem + 0.6vw);
-    }
-    h3 {
-        font-size: calc(1.2rem + 0.6vw);
-    }
-}
-
-@media (min-width: 2561px) {
-    body, ol li::marker {
-        font-size: calc(1.2rem + 0.7vw);
-    }
-    h1 {
-        font-size: calc(2rem + 0.7vw);
-    }
-    h2 {
-        font-size: calc(1.7rem + 0.7vw);
-    }
-    h3 {
-        font-size: calc(1.4rem + 0.7vw);
-    }
-}
-
-
-section ul, section div p {
-    /*font-size: 1.35rem;*/
-    line-height: 2;
+h3, .btn-main {
+    font-size: 1.1rem;
 }
 
 .btn-main {
@@ -59,23 +23,63 @@ section ul, section div p {
     font-weight: 600;
 }
 
+
+@media (min-width: 1600px) {
+    body, ol li::marker,
+    .btn-main,
+    .icon-item p {
+        font-size: calc(1rem + 0.5vw);
+    }
+    h1 {
+        font-size: calc(1.8rem + 0.5vw);
+    }
+    h2 {
+        font-size: calc(1.4rem + 0.5vw);
+    }
+    h3 {
+        font-size: calc(1.1rem + 0.5vw);
+    }
+}
+
+@media (min-width: 2561px) {
+    body, ol li::marker,
+    .btn-main,
+    .icon-item p {
+        font-size: calc(1rem + 0.75vw);
+    }
+    h1 {
+        font-size: calc(1.8rem + 0.75vw);
+    }
+    h2 {
+        font-size: calc(1.4rem + 0.75vw);
+    }
+    h3 {
+        font-size: calc(1.1rem + 0.75vw);
+    }
+   
+}
+
+
+
 .icon-item p {
-    font-size: calc(0.5rem + 0.5vw);
     line-height: 1.5;
 }
 
+
+section ul, section div p {
+    line-height: 2;
+}
+
+
 @media (min-width: 1024px) {
-    .btn-main {
+    /* .btn-main {
         font-size: 1.1rem;
-    }
+    } */
 }
 
 @media (min-width: 1921px) {
     section ul, section div p {
         line-height: 2.2;
-    }
-    .btn-main {
-        font-size: calc(1.1rem + 0.5vw);
     }
 }
 
@@ -83,58 +87,68 @@ section ul, section div p {
     section ul, section div p {
         line-height: 2.4;
     }
-    .icon-item p { 
-        font-size: calc(0.5rem + 0.6vw);
-    }
-    .btn-main {
-        font-size: calc(2rem + 0.7vw);
-    }
+
 }
 
-/* clamp (min, prefered, max)
-    media queries
-    calc()
-*/
-
-/*---ICON GRID---*/
-  
 
 /*---NAVIGAITON---*/
 
-.nav-menu {
+.header {
     font-size: 0.8rem;
 }
 
+.contact-links {
+    font-size: 0.7rem;
+}
+
 footer {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 
 @media (min-width: 1366px) {
-    .nav-menu {
-        font-size: 1rem;
+    .header {
+        font-size: 0.9rem;
+    }
+    .contact-links {
+        font-size: 0.8rem;
     }
     footer {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
 
 @media (min-width: 1920px) {
     .nav-menu {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    .contact-links {
+        font-size: 1rem;
     }
     footer {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+        
+    .home-icon img,
+    .home-icon-footer img {
+        width: 30px;
     }
 }
 
-@media (min-width: 2561px) {
+@media (min-width: 2560px) {
     .nav-menu {
-        font-size: calc(1.2rem + 0.25vw);
+        font-size: calc(1.1rem + 0.3vw);
+    }
+    .contact-links {
+        font-size: calc(1rem + 0.3vw);
     }
     footer {
-        font-size: calc(1rem + 0.1vw);
+        font-size: calc(0.9rem + 0.3vw);
+    }
+    .home-icon img,
+    .home-icon-footer img {
+        width: calc(40px + 0.3vw);
     }
 }
 
