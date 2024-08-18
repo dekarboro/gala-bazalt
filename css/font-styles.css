@@ -21,12 +21,12 @@ h2 {
 h1 {
     font-size: 1.9rem;
 }
-h2 {
+h2, h3 {
     font-size: 1.2rem;
 }
-h3 {
+/* h3 {
     font-size: 1.1rem;
-}
+} */
 
 .btn-main {
     font-size: 1rem;
@@ -37,12 +37,12 @@ h3 {
     h1 {
         font-size: 2.2rem;
     }
-    h2 {
+    h2, h3 {
         font-size: 1.4rem;
     }
-    h3 {
+    /* h3 {
         font-size: 1.1rem;
-    }
+    } */
 }
 
 
@@ -58,12 +58,12 @@ h3 {
     h1 {
         font-size: calc(2.2rem + 0.354vw);
     }
-    h2 {
+    h2, h3 {
         font-size: calc(1.4rem + 0.35vw);
     }
-    h3 {
+    /* h3 {
         font-size: calc(1.1rem + 0.35vw);
-    }
+    } */
 }
 
 @media (min-width: 2561px) {
@@ -78,12 +78,12 @@ h3 {
     h1 {
         font-size: calc(2.2rem + 0.6vw);
     }
-    h2 {
+    h2, h3 {
         font-size: calc(1.4rem + 0.6vw);
     }
-    h3 {
+    /* h3 {
         font-size: calc(1.1rem + 0.6vw);
-    }
+    } */
    
 }
 
