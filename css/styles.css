@@ -40,10 +40,15 @@ div p, h3 {
     margin-bottom: 20px;
 }
 
+div.text-left, div.text-right {
+    margin-top: 25px;
+}
+
+
 @media (min-width: 1024px) {
     section {
         margin-bottom: 100px;
-    }
+    }    
     div.text-left, div.text-right {
         margin-top: 50px;
     }

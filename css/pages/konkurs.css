@@ -40,6 +40,10 @@ ol li::marker {
 .key-container {
     padding-left: 5%;
     padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .key-container > img {
@@ -49,7 +53,7 @@ ol li::marker {
 
 
 .contact-container {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .contact-card {
@@ -58,8 +62,8 @@ ol li::marker {
     border-bottom: 1px solid black;
     margin-bottom: 20px;
 
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.2rem;
+    font-weight: 500;
 
     display: flex;
     justify-content: flex-start;
@@ -109,28 +113,23 @@ ol li::marker {
         margin-left: 20%;
         margin-bottom: 100px;
     }
+    .key-container > img {
+        width: 70%;
+    }
+    
 
     .contact-card {
-        font-size: calc(1.2rem + 1vw);
-        padding: calc(15px + 0.2vw) 0 calc(15px + 0.2vw) calc(20px + 2vw);
+        font-size: calc(1.2rem + 0.5vw);
+        padding: calc(15px + 0.2vw) 0 calc(15px + 0.2vw) calc(20px + 0.2vw);
     }
     .contact-card img {
-        width: calc(60px + 2vw);
+        width: calc(60px + 1vw);
     }
     .plane-container h1 {
-        font-size: calc(1.8rem + 1vw);
+        font-size: calc(2.4em + 0.5vw);
     }
 }
 
-@media (min-width: 1024px) {
-    .key-container {
-        margin-bottom: calc(100px + 2vw);
-    }
-    .plane-container h1 {
-        font-size: calc(2rem + 1.4vw);
-    }
-
-}
 
 footer {
     margin-top: 0;

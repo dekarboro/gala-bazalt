@@ -2,59 +2,87 @@ html {
     font-size: 100%;
 }
 
-body, ol li::marker {
+body, 
+ol li::marker,
+.icon-item p {
     font-family: 'MontserratFont', Helvetica, Arial, sans-serif;
     font-weight: 400;
     font-size: 0.9rem;
 }
 
-h1 {
-    font-size: 1.8rem;
+
+h1, h3 {
+    font-weight: 300;
 }
 h2 {
-    font-size: 1.4rem;
+    font-weight: 400;
 }
-h3, .btn-main {
+
+h1 {
+    font-size: 1.9rem;
+}
+h2 {
+    font-size: 1.2rem;
+}
+h3 {
     font-size: 1.1rem;
 }
 
 .btn-main {
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
 }
 
 
 @media (min-width: 1600px) {
-    body, ol li::marker,
-    .btn-main,
+    body, 
+    ol li::marker,
     .icon-item p {
-        font-size: calc(1rem + 0.5vw);
+        font-size: calc(0.9rem + 0.2vw);
+    }
+    .btn-main {
+        font-size: calc(1rem + 0.35vw);
     }
     h1 {
-        font-size: calc(1.8rem + 0.5vw);
+        font-size: calc(2.2rem + 0.354vw);
     }
     h2 {
-        font-size: calc(1.4rem + 0.5vw);
+        font-size: calc(1.4rem + 0.35vw);
     }
     h3 {
-        font-size: calc(1.1rem + 0.5vw);
+        font-size: calc(1.1rem + 0.35vw);
     }
 }
 
 @media (min-width: 2561px) {
-    body, ol li::marker,
-    .btn-main,
+    body,
+    ol li::marker,
     .icon-item p {
-        font-size: calc(1rem + 0.75vw);
+        font-size: calc(0.9rem + 0.4vw);
+    }
+    .btn-main {
+        font-size: calc(1rem + 0.6vw);
     }
     h1 {
-        font-size: calc(1.8rem + 0.75vw);
+        font-size: calc(2.2rem + 0.6vw);
     }
     h2 {
-        font-size: calc(1.4rem + 0.75vw);
+        font-size: calc(1.4rem + 0.6vw);
     }
     h3 {
-        font-size: calc(1.1rem + 0.75vw);
+        font-size: calc(1.1rem + 0.6vw);
     }
    
 }
@@ -68,13 +96,6 @@ h3, .btn-main {
 
 section ul, section div p {
     line-height: 2;
-}
-
-
-@media (min-width: 1024px) {
-    /* .btn-main {
-        font-size: 1.1rem;
-    } */
 }
 
 @media (min-width: 1921px) {
@@ -93,7 +114,7 @@ section ul, section div p {
 
 /*---NAVIGAITON---*/
 
-.header {
+.nav-menu, .lang-btn {
     font-size: 0.8rem;
 }
 
@@ -105,9 +126,17 @@ footer {
     font-size: 0.7rem;
 }
 
+.home-icon img {
+    width: 30px
+}
+
+.home-icon-footer img {
+    width: 20px;
+}
+
 
 @media (min-width: 1366px) {
-    .header {
+    .nav-menu, .lang-btn {
         font-size: 0.9rem;
     }
     .contact-links {
@@ -120,7 +149,7 @@ footer {
 
 
 @media (min-width: 1920px) {
-    .nav-menu {
+    .nav-menu, .lang-btn {
         font-size: 1.1rem;
     }
     .contact-links {
@@ -130,14 +159,16 @@ footer {
         font-size: 0.9rem;
     }
         
-    .home-icon img,
+    .home-icon img {
+        width: 35px;
+    }
     .home-icon-footer img {
-        width: 30px;
+        width: 25px;
     }
 }
 
 @media (min-width: 2560px) {
-    .nav-menu {
+    .nav-menu, .lang-btn {
         font-size: calc(1.1rem + 0.3vw);
     }
     .contact-links {
@@ -146,9 +177,13 @@ footer {
     footer {
         font-size: calc(0.9rem + 0.3vw);
     }
-    .home-icon img,
+    .home-icon img {
+        width: calc(40px + 0.2vw);
+    }
     .home-icon-footer img {
-        width: calc(40px + 0.3vw);
+        width: calc(30px + 0.2vw);
     }
 }
+
+
 

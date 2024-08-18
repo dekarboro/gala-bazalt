@@ -3,7 +3,8 @@
 .icon-grid-outer {
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 
     display: flex;
     justify-content: center;
@@ -12,7 +13,6 @@
 .icon-grid-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    width: 100%;
     gap: 10px;
 }
 .icon-item {
@@ -22,7 +22,7 @@
 }
 .icon-item img {
     width: auto;
-    height: 100px;
+    height: 140px;
 }
 
 .icon-item p {
@@ -40,13 +40,10 @@
         margin-right: 25px;
     }
     .icon-grid-inner {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-    }
-    .icon-item {
+        grid-template-columns: repeat(3, 1fr);        
     }
     .icon-item img {
-        height: 140px;
+        height: 170px;
     }
 }
 
@@ -62,15 +59,14 @@
     }
     .icon-grid-inner {
         grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
     }
     .icon-item img {
-        height: 140px;
+        height: 200px;
     }
 }
 
 
-@media (min-width: 1921px) {
+@media (min-width: 1920px) {
     .icon-grid-inner {
        
     }
@@ -79,7 +75,7 @@
     }
 }
 
-@media (min-width: 2561px) {
+@media (min-width: 2560px) {
     .icon-grid-inner {
         gap: 100px;
     }
