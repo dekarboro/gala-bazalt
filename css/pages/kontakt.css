@@ -1,4 +1,3 @@
-
 @media (max-width: 1024px) {
         
     .text-right {
@@ -6,12 +5,57 @@
     }
 }
 
+.contact-container {
+    width: 70%;
+    margin: auto;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.contact-container a:hover {
+    color: #52ddf0;
+}   
+.contact-container span {
+    text-align: center;
+    display: block;
+    margin: 50px auto 20px auto;
+}
+.contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-card img {
+    width: 40px;
+    margin-right: 20px;
+}
+@media (min-width: 1024px) {
+    .contact-container {
+        font-size: 1.8rem;
+    }
+    .contact-card img {
+        width: 60px;
+        margin-right: 40px;
+    }
+}
+@media (min-width: 1920px) {
+    .contact-container {
+        font-size: calc(1.8rem + 0.5vw);
+    }
+    .contact-container span {
+        margin-top: 70px;
+    }
+    .contact-card img {
+        width: calc(60px + 0.5vw);
+    }
+}
+
+
+
 input::placeholder,
 textarea::placeholder {
     font-family: 'MontserratFont', Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
-
 
 .contact-form-container {
     background-color: #ffffff;
