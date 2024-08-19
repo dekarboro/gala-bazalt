@@ -83,31 +83,32 @@
                 <div class="contact-form-container">
                     <p class="form-title">CONTACT FORM</p>
                     <p class="form-description">Once you fill out the form and send the message, we will contact you</p>
-                    <form class="contact-form">
-                        <label>
-                            <input type="text" name="first-name" placeholder="First Name*" required>
+                    <form class="contact-form" id="contact-form" action="../send-email.php" method="POST">
+                        <label for="first-name">
+                            <input type="text" id="first-name" name="first-name" placeholder="First Name*" required>
                         </label>
-                        <label>
-                            <input type="text" name="last-name" placeholder="Last Name*" required>
+                        <label for="last-name">
+                            <input type="text" id="last-name" name="last-name" placeholder="Last Name*" required>
                         </label>
-                        <label>
-                            <input type="email" name="email" placeholder="Company Email*" required>
+                        <label for="email">
+                            <input type="email" id="email" name="email" placeholder="Company Email*" required>
                         </label>
-                        <label>
-                            <input type="tel" name="phone" placeholder="Phone Number">
+                        <label for="phone">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
                         </label>
-                        <label>
-                            <textarea name="message" placeholder="Your Message"></textarea>
+                        <label for="message">
+                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
                         </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox" name="consent">
+                        <label for="checkbox" class="checkbox-container">
+                            <input type="checkbox" id="checkbox" name="consent">
                             <span class="checkbox-text">
                                 I agree to contacts from representatives of the Gala Basalt project at 
                                 the provided e-mail address and telephone number in order to present 
                                 a marketing offer.
                             </span>
                         </label>
-                        <button type="submit" class="submit-btn">SEND YOUR INQUIRY</button>                        
+                        <button type="submit" class="submit-btn">SEND YOUR INQUIRY</button>
+                        <p id="answer" class="form-success"></p>                            
                     </form>                    
                 </div>
                 <div class="contact-container">

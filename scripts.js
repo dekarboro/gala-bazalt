@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const mobileNavLinks = document.querySelector('.mobile-nav-links');
+    const form = document.querySelector('#contact-form');
+    const answer = document.querySelector('answer');
 
     menuToggle.addEventListener('click', function() {
         mobileNavLinks.classList.toggle('active');        
@@ -20,6 +22,30 @@ document.addEventListener('DOMContentLoaded', function() {
                 behavior: 'smooth'
             });
         });
+    });
+
+    // form.addEventListener('submit', e => {
+    //     e.preventDefault();
+    //     document.querySelector('.form-success').classList.toggle('on');
+    // })
+
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        
+        let formData = new FormData(this);
+        
+        fetch('send-email.php', {
+            method: 'POST',
+            body: formData
+        }).then(response => response.text())
+          .then(data => {
+              // Display the message in a div or alert
+              answer.innerText = data;
+              answer.classList.toggle('form-success');
+          }).catch(error => {
+                answer.innerText = error;
+                answer.classList.toggle('form-error');
+          });
     });
     
 });

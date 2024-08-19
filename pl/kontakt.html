@@ -83,24 +83,24 @@
                 <div class="contact-form-container">
                     <p class="form-title">FORMULARZ KONTAKTOWY</p>
                     <p class="form-description">Gdy wypełnisz formularz i wyślesz wiadomość skontaktujemy się z tobą</p>
-                    <form class="contact-form">
-                        <label>
-                            <input type="text" name="first-name" placeholder="Imię*" required>
+                    <form class="contact-form" id="contact-form" action="../send-email.php" method="POST">
+                        <label for="first-name">
+                            <input type="text" id="first-name" name="first-name" placeholder="Imię*" required>
                         </label>
-                        <label>
-                            <input type="text" name="last-name" placeholder="Nazwisko*" required>
+                        <label for="last-name">
+                            <input type="text" id="last-name" name="last-name" placeholder="Nazwisko*" required>
                         </label>
-                        <label>
-                            <input type="email" name="email" placeholder="Firmowy e-mail*" required>
+                        <label for="email">
+                            <input type="email" id="email" name="email" placeholder="Firmowy e-mail*" required>
                         </label>
-                        <label>
-                            <input type="tel" name="phone" placeholder="Numer telefonu">
+                        <label for="phone">
+                            <input type="tel" id="phone" name="phone" placeholder="Numer telefonu">
                         </label>
-                        <label>
-                            <textarea name="message" placeholder="Twoja wiadomość"></textarea>
+                        <label for="message">
+                            <textarea name="message" id="message" placeholder="Twoja wiadomość"></textarea>
                         </label>
-                        <label class="checkbox-container">
-                            <input type="checkbox" name="consent">
+                        <label for="checkbox" class="checkbox-container">
+                            <input type="checkbox" id="checkbox" name="consent">
                             <span class="checkbox-text">
                                 Zgadzam się na kontakty przedstawicieli projektu Gala Basalt
                                 na wskazany adres e-mail i numer telefonu w celu przedstawienia
@@ -108,6 +108,7 @@
                             </span>
                         </label>
                         <button type="submit" class="submit-btn">WYŚLIJ SWOJE ZAPYTANIE</button>
+                        <p id="answer" class="form-success"></p>                        
                     </form>
                 </div>
                 <div class="contact-container">
