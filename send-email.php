@@ -10,10 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     $recaptchaResponse = $_POST['g-recaptcha-response'];
-
     $secretKey = "6LdCQywqAAAAAFPbl9Yzsmu-iSee5eqSUs1twfTv";
-    $ip = $_SERVER['REMOTE_ADDR'];
-    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaResponse&remoteip=$ip");
+
+    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaResponse");
     $responseKeys = json_decode($response, true);
 
     if(intval($responseKeys["success"]) !== 1) {
@@ -39,4 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "Sorry, there was an error sending your message. Please try again later.";
         }        
     }    
+} else {
+    echo 'Invalid request method.';
+}
 ?>
