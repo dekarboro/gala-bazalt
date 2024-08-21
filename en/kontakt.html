@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../css/pages/kontakt.css">
 
     <script defer src="../scripts.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -83,7 +84,7 @@
                 <div class="contact-form-container">
                     <p class="form-title">CONTACT FORM</p>
                     <p class="form-description">Once you fill out the form and send the message, we will contact you</p>
-                    <form class="contact-form" id="contact-form" action="../send-email.php" method="POST">
+                    <form class="contact-form" id="contact-form" action="../send-email.php" method="POST">                        
                         <label for="first-name">
                             <input type="text" id="first-name" name="first-name" placeholder="First Name*" required>
                         </label>
@@ -107,6 +108,7 @@
                                 a marketing offer.
                             </span>
                         </label>
+                        <div class="g-recaptcha" data-sitekey="6LdCQywqAAAAAH4Xb_vBQJjCfdhLsZ--_mnkqh1u"></div>
                         <button type="submit" class="submit-btn">SEND YOUR INQUIRY</button>
                         <p id="answer" class="form-success"></p>                            
                     </form>                    
